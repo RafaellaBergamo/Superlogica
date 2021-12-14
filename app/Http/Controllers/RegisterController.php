@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use GuzzleHttp\Psr7\Request as Psr7Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 
@@ -11,7 +10,6 @@ class RegisterController extends BaseController
 {
     public function register(Request $request) 
     {
-        dd($request);
         $this->validate($request);
 
         $ok = User::insert([
