@@ -13,9 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/users', 'App\Http\Controllers\UserController@search')->name('search');
-Route::post('/users', 'App\Http\Controllers\UserController@register')->name('register');
+Route::get('/users', 'App\Http\Controllers\UserController@search');
+Route::post('/users', 'App\Http\Controllers\UserController@register');
