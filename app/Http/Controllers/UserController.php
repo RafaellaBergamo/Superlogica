@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Repositories\Contracts\UserRepositoryInterface;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use App\User;
 
 class UserController extends BaseController
