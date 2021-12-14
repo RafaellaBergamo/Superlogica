@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::post('/users', 'App\Http\Controllers\RegisterController@register')->name('register');
-Route::get('/users', 'App\Http\Controllers\RegisterController@read')->name('register');
+Route::get('/users', 'App\Http\Controllers\RegisterController@read')->name('read');
