@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateUserRequest;
 use App\Repositories\Contracts\UserRepositoryInterface;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
@@ -9,9 +10,8 @@ use App\User;
 
 class UserController extends BaseController
 {
-    public function register(Request $request, UserRepositoryInterface $repository) 
+    public function register(CreateUserRequest $request, UserRepositoryInterface $repository) 
     {
-        $this->validate($request);
         $newUser = [
             'name' => $request->name,
             'userName' => $request->userName,
@@ -24,8 +24,10 @@ class UserController extends BaseController
 
         $ok = $repository->create($user);
 
+
         return response()->json([
-            'success' => $ok
+            'success' => $ok,
+            'message' => $ok ? 'Usuário cadastrado com sucesso!!' : 'Ocorreu um erro ao cadastrar usuário'
         ]);
     }
 
