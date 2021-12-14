@@ -33,5 +33,6 @@
             </div>
             <input type="submit" value="Cadastrar">
         </form>
+        <a href="{{ route('search') }}"> <button> Pesquisar </button> </a>
     </body>
 </html>

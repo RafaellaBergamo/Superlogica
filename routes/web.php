@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/users', 'App\Http\Controllers\RegisterController@register')->name('register');
-Route::get('/users', 'App\Http\Controllers\RegisterController@read')->name('read');
+Route::get('/users', 'App\Http\Controllers\UserController@search')->name('search');
+Route::post('/users', 'App\Http\Controllers\UserController@register')->name('register');
