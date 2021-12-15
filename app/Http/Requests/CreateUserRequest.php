@@ -23,7 +23,6 @@ class CreateUserRequest extends FormRequest
      */
     public function rules()
     {
-        dd("teste");
         return [
             'name' => 'required|min:10',
             'userName' => 'required|min:5',

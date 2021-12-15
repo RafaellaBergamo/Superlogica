@@ -12,7 +12,7 @@ class UserController extends BaseController
 {
     public function register(CreateUserRequest $request, UserRepositoryInterface $repository) 
     {
-        return $request->name;
+        dd($request->all());
         $newUser = [
             'name' => $request->name,
             'userName' => $request->userName,
