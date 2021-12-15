@@ -24,7 +24,7 @@ class CreateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|regex:/^[a-zA-Z\u00C0-\u017F´]+\s+[a-zA-Z\u00C0-\u017F´]{0,}$/',
+            'name' => 'required|regex:/^[a-zA-Z]+\s+[a-zA-Z]{0,}$/',
             'userName' => 'required|min:5',
             'zipCode' => 'required|min:8|max:8|numeric',
             'email' => 'required|unique:App\Models\UserModel|email:rfc,dns', 
