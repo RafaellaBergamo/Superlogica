@@ -22,8 +22,7 @@ class UserRepository implements UserRepositoryInterface
         
     public function findOne(int $id)
     {
-        dd($this->model->find($id));
-        //return $this->model->find($id);
+        return $this->model->find($id) == null ? "Usuário não encontrado" : $this->model->find($id);
     }
 
     public function create(User $user) 
