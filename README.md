@@ -28,7 +28,7 @@ API teste:
         "userName": "mariasilva", (deve conter no mínimo 5 caracteres)  
         "zipCode": "17020356",    (Apenas números e com 8 caracteres)  
         "email": "mariasilva@email.com", (Deve ser um email válido e único)  
-        "password": "Senha1234",  (Deve conter no mínimo: 8 caracteres, 1 letra maiúscula, 1 letra minúscula e 1 número)   
+        "password": "Senha1234"  (Deve conter no mínimo: 8 caracteres, 1 letra maiúscula, 1 letra minúscula e 1 número)   
     }
 08. Para buscar todos os usuários cadastrados: https://superlogicateste.herokuapp.com/users (GET)
 09. Para buscar um usuário específico: https://superlogicateste.herokuapp.com/users/{id} (GET)
