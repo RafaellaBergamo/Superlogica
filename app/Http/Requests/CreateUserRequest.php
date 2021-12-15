@@ -24,11 +24,11 @@ class CreateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|regex:/^[a-zA-Z]+\s+[a-zA-Z]{0,}$/',
-            'userName' => 'required|min:5',
-            'zipCode' => 'required|min:8|max:8|numeric',
-            'email' => 'required|unique:App\Models\UserModel|email:rfc,dns', 
-            'password' => 'required|min:8|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x]).*$/'
+            'name' => 'bail|required|regex:/^[a-zA-Z]+\s+[a-zA-Z]{0,}$/',
+            'userName' => 'bail|required|min:5',
+            'zipCode' => 'bail|required|size:8|numeric',
+            'email' => 'bail|required|unique:App\Models\UserModel|email:rfc,dns', 
+            'password' => 'bail|required|min:8|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x]).*$/'
         ];
     }
 }
