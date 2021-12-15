@@ -26,7 +26,7 @@ class CreateUserRequest extends FormRequest
         return [
             'name' => 'bail|required|regex:/^[a-zA-Z]+\s+[a-zA-Z]{0,}$/',
             'userName' => 'bail|required|min:5',
-            'zipCode' => 'bail|required|integer|regex:/^\d{8}$/',
+            'zipCode' => 'bail|required|regex:/^\d{8}$/',
             'email' => 'bail|required|unique:App\Models\UserModel|email:rfc,dns', 
             'password' => 'bail|required|regex:/^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$/'
         ];
