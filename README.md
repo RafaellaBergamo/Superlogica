@@ -8,9 +8,6 @@ API teste:
 
 - PHP 7.4.19 
 - Laravel 8.73.2
-- Composer
-- Laragon Full 5.0.0
-- Apache 2.4.47
 - Postman
 
 
