@@ -7,6 +7,7 @@ use App\Http\Requests\FindUserRequest;
 use App\Repositories\Contracts\UserRepositoryInterface;
 use Illuminate\Routing\Controller as BaseController;
 use App\User;
+use Illuminate\Http\Client\Request;
 
 class UserController extends BaseController
 {

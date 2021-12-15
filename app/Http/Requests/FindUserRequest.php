@@ -24,7 +24,13 @@ class FindUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'required|numeric',
+            'id' => 'required|numeric|exists:App\Models\UserModel',
         ];
     }
+
+    protected function prepareForValidation() 
+    {
+        $this->merge(['id' => $this->route('id')]);
+    }
+
 }
