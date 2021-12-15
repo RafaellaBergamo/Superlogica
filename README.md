@@ -32,3 +32,4 @@ API teste:
     }
 08. Para buscar todos os usuários cadastrados: https://superlogicateste.herokuapp.com/users (GET)
 09. Para buscar um usuário específico: https://superlogicateste.herokuapp.com/users/{id} (GET)
+    onde {id} é o id do usuário cadastrado
