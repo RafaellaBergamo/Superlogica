@@ -32,3 +32,4 @@ API teste:
     onde {id} é o id do usuário cadastrado
 
 - Sobre o Exercício 2 e 3: eles estão na pasta public\arquivos
+* Utilizei MariaDB para o DML 
