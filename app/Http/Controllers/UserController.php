@@ -12,6 +12,7 @@ class UserController extends BaseController
 {
     public function register(CreateUserRequest $request, UserRepositoryInterface $repository) 
     {
+        dd($request->name);
         $newUser = [
             'name' => $request->name,
             'userName' => $request->userName,
@@ -23,7 +24,6 @@ class UserController extends BaseController
         $user = new User($newUser);
 
         $ok = $repository->create($user);
-
 
         return response()->json([
             'success' => $ok,
