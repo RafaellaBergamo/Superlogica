@@ -20,6 +20,7 @@ API teste:
 02. Criar uma nova aba 
 03. Para cadastrar um novo usuário: https://superlogicateste.herokuapp.com/users (POST)
 04. Na aba Body, em raw com tipo JSON, informe os valores conforme exemplo abaixo:
+ -  
     {
         "name": "Maria Silva"    (Nome completo e sem acento),
         "userName": "mariasilva" (deve conter no mínimo 5 caracteres)
