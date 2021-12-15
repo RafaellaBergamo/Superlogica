@@ -34,9 +34,8 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        dd($exception);
         $this->reportable(function (Throwable $e) {
-            //
+            dd($e);
         });
     }
 
