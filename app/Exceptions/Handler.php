@@ -38,4 +38,13 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $exception) 
+    {
+        if($request->is("/users")) 
+        {
+            dd($exception);
+        }
+        return parent::render($request, $exception);
+    }
 }
