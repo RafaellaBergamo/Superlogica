@@ -24,7 +24,7 @@ class FindUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'required|numeric|exists:App\Models\UserModel',
+            'id' => 'required|numeric|exists:App\Models\UserModel, id',
         ];
     }
 
