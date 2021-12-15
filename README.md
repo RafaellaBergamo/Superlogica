@@ -31,5 +31,5 @@ API teste:
         "password": "Senha1234"  (Deve conter no mínimo: 8 caracteres, 1 letra maiúscula, 1 letra minúscula e 1 número)   
     }
 08. Para buscar todos os usuários cadastrados: https://superlogicateste.herokuapp.com/users (GET)
-09. Para buscar um usuário específico: https://superlogicateste.herokuapp.com/users/{id} (GET)
+09. Para buscar um usuário específico: https://superlogicateste.herokuapp.com/users/{id} (GET)  
     onde {id} é o id do usuário cadastrado
