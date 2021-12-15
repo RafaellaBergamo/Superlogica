@@ -16,7 +16,7 @@ API teste:
 
 ## Como Utilizar:
 
-01. Caso não tenha, faça download do [Postman] (https://www.postman.com/downloads)
+01. Caso não tenha, faça download do [Postman](https://www.postman.com/downloads)
 02. Você também pode utilizar a versão para navegador: https://www.postman.com/ 
 03. Instale e crie uma conta
 04. Abra o Postman
