@@ -34,7 +34,7 @@ class UserController extends BaseController
         return $repository->findAll();
     }
 
-    public function searchOne(UserRepositoryInterface $repository) 
+    public function searchOne(UserRepositoryInterface $repository, $id) 
     {
         return $repository->findOne($id);
     }
