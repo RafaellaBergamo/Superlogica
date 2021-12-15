@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/users', 'App\Http\Controllers\UserController@search');
+Route::get('/users/{id}', 'App\Http\Controllers\UserController@searchOne');
 Route::post('/users', 'App\Http\Controllers\UserController@register');

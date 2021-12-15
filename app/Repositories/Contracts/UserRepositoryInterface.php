@@ -8,5 +8,6 @@ interface UserRepositoryInterface
 {
     public function __construct(UserModel $user);
     public function findAll();
+    public function findOne(int $id);
     public function create(User $user);
 }
