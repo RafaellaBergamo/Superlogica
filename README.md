@@ -24,7 +24,7 @@ API teste:
 06. Para cadastrar um novo usuário: https://superlogicateste.herokuapp.com/users (POST)
 07. Na aba Body, em raw com tipo JSON, informe os valores conforme exemplo abaixo:  
     {  
-        "name": "Maria Silva",    (Nome completo e sem acento)  
+        "name": "Maria Silva",    `(Nome completo e sem acento)`
         "userName": "mariasilva", (deve conter no mínimo 5 caracteres)  
         "zipCode": "17020356",    (Apenas números e com 8 caracteres)  
         "email": "mariasilva@email.com", (Deve ser um email válido e único)  
@@ -33,3 +33,5 @@ API teste:
 08. Para buscar todos os usuários cadastrados: https://superlogicateste.herokuapp.com/users (GET)
 09. Para buscar um usuário específico: https://superlogicateste.herokuapp.com/users/{id} (GET)  
     onde {id} é o id do usuário cadastrado
+
+
