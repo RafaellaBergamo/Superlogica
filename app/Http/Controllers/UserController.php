@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateUserRequest;
+use App\Http\Requests\FindUserRequest;
 use App\Repositories\Contracts\UserRepositoryInterface;
 use Illuminate\Routing\Controller as BaseController;
 use App\User;
@@ -34,9 +35,9 @@ class UserController extends BaseController
         return $repository->findAll();
     }
 
-    public function searchOne(UserRepositoryInterface $repository, $id) 
+    public function searchOne(FindUserRequest $request, UserRepositoryInterface $repository) 
     {
-        return $repository->findOne($id);
+        return $repository->findOne($request->id);
     }
     
 }
